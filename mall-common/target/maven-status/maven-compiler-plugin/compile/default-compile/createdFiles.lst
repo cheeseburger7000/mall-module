@@ -1,0 +1,5 @@
+com\shaohsiung\model\Category.class
+com\shaohsiung\model\Goods$GoodsBuilder.class
+com\shaohsiung\model\Category$CategoryBuilder.class
+com\shaohsiung\model\Goods.class
+com\shaohsiung\util\IdHelper.class

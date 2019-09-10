@@ -1,0 +1,6 @@
+com\shaohsiung\mallsearch\service\SearchService.class
+com\shaohsiung\mallsearch\listener\GoodsListener.class
+com\shaohsiung\mallsearch\model\GoodsDoc.class
+com\shaohsiung\mallsearch\repository\GoodsDocRepository.class
+com\shaohsiung\mallsearch\MallSearchApplication.class
+com\shaohsiung\mallsearch\service\SearchService$1.class

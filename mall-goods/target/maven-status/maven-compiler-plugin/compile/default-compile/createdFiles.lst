@@ -1,0 +1,6 @@
+com\shaohsiung\mallgoods\handler\MoneyTypeHandler.class
+com\shaohsiung\mallgoods\mapper\CategoryMapper.class
+com\shaohsiung\mallgoods\MallGoodsApplication.class
+com\shaohsiung\mallgoods\service\CategoryService.class
+com\shaohsiung\mallgoods\mapper\GoodsMapper.class
+com\shaohsiung\mallgoods\service\GoodsService.class

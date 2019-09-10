@@ -1,0 +1,20 @@
+mybatis:
+  type-handlers-package: com.shaohsiung.mallgoods.handler
+  configuration:
+    map-underscore-to-camel-case: true
+    type-aliases-package: com.shaohsiung.mallgoods.model
+
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/db_search_goods?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+  output:
+    ansi:
+      enabled: always
+
+rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
