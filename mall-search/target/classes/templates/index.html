@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>index</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1 th:text="${prompt}">prompt</h1>
+    <!-- 搜索框，按钮 -->
+    <input id="keyword" type="text">
+    <button id="searchBtn">搜索</button>
+    <div id="resultContent">
+        搜索结果...
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script>
+        $('#searchBtn').click(function () {
+            var keyword = $('#keyword').val();
+            console.log("[获取keyword] keyword = " + keyword);
+            // 发送Ajax请求
+            $.ajax({
+                url: '/search/' + keyword,
+                //data: {keyword: keyword},
+                type: "get",
+                dataType: "json",
+                success: function(data) {
+                    console.log(data);
+                    var result = "";
+                    for (var i = 0; i < data.length; i++) {
+                        result += `<p>
+                                                    分类编码:`+ data[i].categoryId +`
+                                                    商品名称:`+ data[i].name +`
+                                                    商品详情:`+ data[i].detail +`
+                                                    价格:`+ data[i].price +`
+                                           </p>`;
+                    }
+
+                    $('#resultContent').html(result);
+                }
+            });
+        })
+
+    </script>
+</body>
+</html>

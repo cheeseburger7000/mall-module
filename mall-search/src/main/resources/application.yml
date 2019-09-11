@@ -3,3 +3,6 @@ spring:
     elasticsearch:
       cluster-name: elasticsearch
       cluster-nodes: localhost:9300
+
+  thymeleaf:
+    cache: false

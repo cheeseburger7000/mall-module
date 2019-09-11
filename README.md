@@ -1,10 +1,11 @@
 # mall-modules
-- [ ] 添加商品->添加数据库和索引库（消息队列）
-- [ ] 高亮搜索
+- [x] 添加商品->添加数据库和索引库（消息队列）
+- [x] 高亮搜索
 - [ ] 使用 Swagger 优化
 - [ ] idea构建docker镜像，并发布到私服上（虚拟机上），然后vps从私服上获取docker镜像，然后构建应用。（compose）
 - [ ] JsonFormatter ...
 - [ ] 查询索引时，如何直接使用反序列器转化？
+- [ ] 服务鉴权 JWT
 
 ## 涉及技术
 - Spring Boot
@@ -39,4 +40,11 @@ create table t_goods (
 ```
 备注：category_id为0的商品说明未分类。
 
+## 其它
+分而治之处理一个项目，从数据库文件开始理解。。。
 
+关于前端页面设计
+51cto jd mock webpack4.x
+vue-order-app
+blog-ui
+happymall-ui 
