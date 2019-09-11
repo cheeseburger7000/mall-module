@@ -18,3 +18,9 @@ rabbitmq:
     port: 5672
     username: guest
     password: guest
+
+qiniu:
+  accessKey: AiYMNMLUCx5T2KJByydrwa3Yje2pVOFZmMn-XlRW
+  secretKey: MEeHVxsI_sJ_2P-x5Css-9IPBLQ65k_3BWfffNNp
+  bucket: bigtable
+  path: bigtable.s3-cn-south-1.qiniucs.com
